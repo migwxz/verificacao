@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de Nome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificação</h1>
+        <form id="nameForm">
+            <label for="name">Qual teu nome?:</label>
+            <input type="text" id="name" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <div id="question" style="display: none;">
+            <p>Tu me ama? (sim/não)</p>
+            <button onclick="handleAnswer('sim')">Sim</button>
+            <button onclick="handleAnswer('não')">Não</button>
+        </div>
+
+        <div id="result" style="display: none;">
+            <p id="resultText"></p>
+            <img id="loveGif" src="" alt="Love Emoji" style="display: none;">
+            <div id="musicPlayer" style="display: none;">
+                <iframe id="youtubePlayer" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <button id="retryButton" onclick="retry()">Voltar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
