@@ -1,4 +1,3 @@
-
 document.getElementById('nameForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -17,7 +16,6 @@ function handleAnswer(resposta) {
     const resultDiv = document.getElementById('result');
     const resultText = document.getElementById('resultText');
     const loveGif = document.getElementById('loveGif');
-    const angryGif = document.getElementById('angryGif');
     const musicPlayer = document.getElementById('musicPlayer');
     const youtubePlayer = document.getElementById('youtubePlayer');
     const retryButton = document.getElementById('retryButton');
@@ -32,8 +30,6 @@ function handleAnswer(resposta) {
     } else if (resposta === 'não') {
         resultText.innerText = 'Resposta incorreta, responde certo desgraça.';
         loveGif.style.display = 'none';
-        angryGif.src = 'https://media.giphy.com/media/3o6ZtaO9BZHcOjmErm/giphy.gif'; // URL do GIF bravo
-        angryGif.style.display = 'block';
         musicPlayer.style.display = 'none';
         retryButton.style.display = 'inline-block';
     }
